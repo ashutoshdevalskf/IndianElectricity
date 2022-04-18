@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- font awesome use kiya h idhr -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        html {
+            background-color: white;
+        }
+        .history-container {
+            
+            position: absolute;
+            left: 0;
+            top: 50px;
+
+            overflow: auto;
+            width: 100%;
+            
+
+            display: flex !important;
+            border: none !important;
+            align-items: center;
+            justify-content: center;
+            overflow: auto;
+
+        }
+        .history{
+            position: relative;
+
+        }
+        
+
+
+        .history-container table {
+            
+            margin: 2rem;
+            border-spacing: 0;
+            border-radius: 0.5rem;
+            background: rgb(255, 247, 232);
+            width: 80rem;
+        }
+        tr:nth-child(even){
+            background-color: white;
+        }
+        td{ 
+            padding: 1.5rem;
+            border: None;
+            margin: 0rem;
+            text-align: center;
+            
+        }
+        th{
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            background: rgb(240, 234, 221);
+
+        }
+        tr :hover{
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+            background-color: white;
+
+        }
+        
+
+        
+    </style>
+</head>
+
+<body>
+   
+    <!-- header section ends -->
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <!-- Jab media query lagayenge tab ke liye menu bar wala icon-->
+
+        <a href="#" class="logo"><span>I</span>ndian Electricity</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html" target="_blank">About</a>
+            <a href="#">contact</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas" id="log-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+            <i class="fas fa-moon"></i>
+        </div>
+
+    </header>
+
+    <!-- login form container  -->
+
+   
+<section class="history"> 
+   
+    <div class="history-container">
+       
+        
+
+
+        <table>
+            <tr>
+                <th>Sr. No</th>
+                <th>Date</th>
+                <th>Month</th>
+                <th>Consumption Units(KWh)</th>
+
+                
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>28-02-2022</td>
+                <td>February</td>
+                <td>124</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>31-01-2022</td>
+                <td>January</td>
+                <td>127</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>31-12-2021</td>
+                <td>December</td>
+                <td>201</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>30-11-2021</td>
+                <td>November</td>
+                <td>187</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>31-10-2021</td>
+                <td>October</td>
+                <td>287</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>30-09-2021</td>
+                <td>September</td>
+                <td>129</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>31-08-2021</td>
+                <td>August</td>
+                <td>187</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>31-07-2021</td>
+                <td>July</td>
+                <td>208</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>30-06-2021</td>
+                <td>June</td>
+                <td>219</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>31-05-2021</td>
+                <td>May</td>
+                <td>199</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>30-04-2021</td>
+                <td>April</td>
+                <td>123</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>31-03-2021</td>
+                <td>March</td>
+                <td>299</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>28-02-2021</td>
+                <td>February</td>
+                <td>171</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>31-01-2021</td>
+                <td>January</td>
+                <td>198</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>28-02-2020</td>
+                <td>February</td>
+                <td>124</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>31-01-2020</td>
+                <td>January</td>
+                <td>127</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>31-12-2020</td>
+                <td>December</td>
+                <td>201</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>30-11-2020</td>
+                <td>November</td>
+                <td>187</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>31-10-2020</td>
+                <td>October</td>
+                <td>287</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>30-09-2020</td>
+                <td>September</td>
+                <td>129</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>31-08-2020</td>
+                <td>August</td>
+                <td>187</td>
+            </tr>
+        </table>
+
+        
+    </div>
+</section>
+    
+    <script>
+        
+
+
+
+    </script>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
