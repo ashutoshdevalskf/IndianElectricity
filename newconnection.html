@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- font awesome use kiya h idhr -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        html {
+            background-color: white;
+        }
+
+
+        .heading span.space {
+            background: none;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            background: var(--orange);
+            color: #fff;
+            padding: .8rem 3rem;
+            border: .2rem solid var(--orange);
+            cursor: pointer;
+            font-size: 1.7rem;
+        }
+
+        .btn:hover {
+            background: var(--light-orange);
+            color: var(--orange);
+        }
+
+        .close:hover {
+            color: var(--orange);
+        }
+
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgb(119, 111, 95);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.6rem 7%;
+        }
+
+        header .logo {
+            font-size: 2.18rem;
+            font-weight: bolder;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        header .logo span {
+            color: var(--orange);
+        }
+
+        header .navbar a {
+            color: #fff;
+            font-size: 2rem;
+            margin: 0 .8rem;
+        }
+
+        header .navbar a:hover {
+            color: var(--orange);
+        }
+
+        header .icons i {
+            font-size: 2.18rem;
+            color: #fff;
+            cursor: pointer;
+            margin-right: 1.9rem;
+        }
+
+        header .icons i:hover {
+            color: var(--orange) !important;
+        }
+
+
+        .pay-container {
+           
+
+            left: 0;
+
+            min-height: 100vh;
+            width: 100%;
+
+            display: flex !important;
+            border: none !important;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+        .pay-container form {
+            margin: 2rem;
+            padding: 1.5rem 2rem;
+            border-radius: .5rem;
+            background: rgb(255, 247, 232);
+            width: 70rem;
+        }
+
+        .pay-container form h3 {
+            font-size: 3rem;
+            color: #0c0c0b;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .pay-container form .box {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.7rem;
+            color: #333;
+            margin: .6rem 0;
+            border: .1rem solid rgba(0, 0, 0, .3);
+            text-transform: none;
+        }
+
+        .pay-container form .box:focus {
+            border-color: var(--orange);
+            ;
+        }
+
+
+
+        .pay-container form label {
+            font-size: 1.5rem;
+        }
+
+        .pay-container form .btn {
+            display: block;
+            width: 100%;
+        }
+
+        .pay-container form p {
+            padding: .5rem 0;
+            font-size: 1.5rem;
+            color: #666;
+        }
+
+        .pay-container form p a {
+            color: var(--orange);
+        }
+
+        .summary {
+            background-color: rgb(239, 255, 206);
+            border-radius: .5 rem;
+
+            display: block;
+            transition: all .2s linear;
+
+        }
+
+        .summary hr {
+            border: 0.05rem solid rgb(0, 0, 0);
+
+            margin: auto;
+        }
+
+        .summary p {
+            align-items: center;
+            text-align: left;
+
+        }
+
+        
+
+       
+
+
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <!-- Jab media query lagayenge tab ke liye menu bar wala icon-->
+
+        <a href="#" class="logo"><span>I</span>ndian Electricity</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html" target="_blank">About</a>
+            <a href="#">contact</a>
+        </nav>
+
+        <div class="icons">
+
+            <i class="fas fa-moon"></i>
+        </div>
+
+
+    </header>
+    <!-- header section ends -->
+
+    <!-- login form container  -->
+
+
+
+    <div class="pay-container">
+
+
+
+        <form action="">
+            <h3>Book New Connection</h3>
+            <input type="text" class="box" placeholder="Enter Your Name">
+            <input type="tel" class="box" id="phone" name="phone" placeholder="Enter Your Mobile Number">
+            <input type="text" class="box" placeholder="Enter Your Address">
+            <Label>Select Date For Connection:</Label>
+            <input id="date" type="date" class="box" placeholder="Select Date for connection">
+            <input list="Docs" class="box" placeholder="Select Document Type">
+            <datalist id="Docs">
+                <option value="Aadhar Card">
+                <option value="Pan Card">
+                <option value="Voter ID Card">
+                <option value="Driving licence"> 
+                <option value="Passport">
+                <option value="-Other-">     
+
+            </datalist>
+            <input type="text" class="box" placeholder="Enter Document Number">
+            
+            
+            <input list="PayMode" class="box" placeholder="Select Payment Mode">
+            <datalist id="PayMode">
+                <option value="Credit/Debit Card">
+                <option value="Net Banking">
+                <option value="UPI">
+                <option value="Wallet">
+                
+            </datalist>
+
+
+            
+
+           
+
+            <input type="submit" value="Book Now" class="btn">
+
+
+
+
+        </form>
+    </div>
+
+    <div class="copyright">
+        <footer>
+            <P><span>&copy</span>INDIAN ELECTRICITY</p>
+        </footer>
+    </div>
+
+    
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
