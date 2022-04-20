@@ -4,7 +4,6 @@
 :root {
 --orange: #ffa500;
 --light-orange: rgba(255, 196, 0, 0.2);
-
 /* variable(to be changed later) */
 }
 
@@ -32,7 +31,7 @@ font-size: 62.5%;
 overflow-x: hidden;
 scroll-padding-top: 6rem;
 scroll-behavior: smooth;
-background-color: white;
+background-color: rgb(228, 220, 202);
 }
 
 
@@ -85,7 +84,7 @@ position: fixed;
 top: 0;
 left: 0;
 right: 0;
-background: #523500;
+background: rgb(234 209 162);
 z-index: 1000;
 display: flex;
 align-items: center;
@@ -233,7 +232,7 @@ display: none;
     
     
     .slideshow-container {
-    margin-top: 6.0rem !important;
+    margin-top: 6.2rem !important;
     width: auto;
     position: relative;
     margin: auto;
@@ -366,7 +365,7 @@ flex-wrap:wrap;
 }
 /* Style the buttons that are used to open and close the faq-page body */
 .faq-page {
-    background-color: #ffffff;
+    background-color: #e4dcca;
     color: #232222;
     cursor: pointer;
     padding: 1rem 1.5rem;
@@ -438,7 +437,7 @@ background-color: rgba(255, 243, 203, 0.2);
       gap: .5rem;
   }
 .consumption-page{
-    background-color: #ffffff;
+    background-color: #e4dcca;
     /* flex: auto; */
     flex: 1 1 30rem;
     color: #232222;
