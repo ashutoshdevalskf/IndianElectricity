@@ -365,7 +365,7 @@ flex-wrap:wrap;
 }
 /* Style the buttons that are used to open and close the faq-page body */
 .faq-page {
-    background-color: #e4dcca;
+    
     color: #232222;
     cursor: pointer;
     padding: 1rem 1.5rem;
@@ -437,7 +437,7 @@ background-color: rgba(255, 243, 203, 0.2);
       gap: .5rem;
   }
 .consumption-page{
-    background-color: #e4dcca;
+    
     /* flex: auto; */
     flex: 1 1 30rem;
     color: #232222;
